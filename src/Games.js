@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { MdStar } from "react-icons/md";
 
 import "./Games.styles.scss";

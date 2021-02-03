@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 const Action = ({ gamesAr }) => {
   return (
     <div className="action-content">
-      {gamesAr.games.map((game, i) => {
+      {gamesAr.games.map((game) => {
         return <GameCard key={game.id} {...game} />;
       })}
     </div>

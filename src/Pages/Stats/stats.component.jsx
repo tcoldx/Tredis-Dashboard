@@ -6,7 +6,7 @@ import "./stats.styles.scss";
 
 const Stats = ({ gamesAr }) => (
   <div className="stats-content">
-    {gamesAr.games.map((game, i) => {
+    {gamesAr.games.map((game) => {
       return <GameCard key={game.id} {...game} />;
     })}
   </div>

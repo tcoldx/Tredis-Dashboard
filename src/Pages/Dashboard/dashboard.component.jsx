@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import "./dashboard.styles.scss";
 import Games from "../../characterRow";
@@ -11,7 +11,7 @@ import { UpdateFav } from "../../redux/favcart/fav.actions";
 4. set local storage with that new array */
 
 const Dashboard = (props) => {
-  const { id, background_image, favara, update, gamesArray } = props;
+  const { favara, update } = props;
 
   const removeFavorites = (gameId) => {
     const newFavorites = favara.filter((g) => g.id !== gameId);

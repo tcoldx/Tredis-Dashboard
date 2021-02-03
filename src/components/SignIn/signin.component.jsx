@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { signInWithGoogle } from "../firebase/firebase.utils";
 
 import "./signin.styles.scss";
 
 const SignIn = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
   return (
     <div className="signin-container">
       <div className="signin-content">
