@@ -4,9 +4,6 @@ import "./dashboard.styles.scss";
 import Games from "../../characterRow";
 import { connect } from "react-redux";
 import { UpdateFav } from "../../redux/favcart/fav.actions";
-import { MdKeyboardArrowLeft } from "react-icons/md";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { MdStar } from "react-icons/md";
 /* 1. get alll items from local storage 
 2.  find the item you want to remove 
 3. remove wit with code 
@@ -21,15 +18,6 @@ const Dashboard = (props) => {
     update(newFavorites);
   };
   // setting up the previous slide functions
-  const prevSlide = (imageId) => {
-    if (gamesArray.background_image) {
-      return;
-    } else {
-      return gamesArray[0];
-    }
-  };
-
-  const nextSlide = (imageId) => {};
 
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favara));
@@ -38,15 +26,7 @@ const Dashboard = (props) => {
   return (
     <div className="dash-con">
       <h1 className="feature-game">Featured Games</h1>
-
-      <div className="slider">
-        <MdKeyboardArrowLeft className="left-arrow" />
-        <Games />
-        <MdKeyboardArrowRight
-          className="right-arrow"
-          onClick={() => nextSlide}
-        />
-      </div>
+      <Games />
 
       <div className="games-card card-4">
         <div className="inner-graph">
