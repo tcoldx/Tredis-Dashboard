@@ -1,0 +1,76 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 200px;
+  height: 150vh;
+  align-items: flex-start;
+  position: relative;
+
+  .sidebar-item {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+      border-radius: 2px;
+      background: linear-gradient(225deg, #aebfc6, #cfe3eb);
+      box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
+      width: 200px;
+    }
+  }
+  .icon-re {
+    position: relative;
+    left: 40px;
+    top: 3.5px;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 40px;
+    top: 50px;
+  }
+  .pl1 {
+    position: relative;
+    top: 5px;
+  }
+
+  .custom-button {
+    position: relative;
+    top: 16px;
+    background: linear-gradient(225deg, #aebfc6, #cfe3eb);
+    box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
+    border-radius: 10px;
+    border: 0px solid black;
+    width: 100px;
+  }
+  .custom-button:hover {
+    background: linear-gradient(225deg, #145d7c, #0fa4df);
+  }
+  .inner-text-log {
+    font-family: "Big Shoulders Stencil Text", cursive;
+    color: black;
+    position: relative;
+    left: 32px;
+    text-decoration: none;
+  }
+
+  .profile-log {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  .pl1 {
+    font-family: "Big Shoulders Stencil Text", cursive;
+  }
+}

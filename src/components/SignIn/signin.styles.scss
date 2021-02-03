@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.signin-container {
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+
+  align-items: center;
+}
+
+h1 {
+  font-family: "Orbitron", sans-serif;
+}
+
+.signin-content {
+  display: flex;
+  font-family: "Orbitron", sans-serif;
+  position: absolute;
+  height: 100vh;
+  left: 14vw;
+  top: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.email {
+  font-family: "Orbitron", sans-serif;
+  border: 1px solid cyan;
+  padding: 10px;
+  width: 200px;
+  opacity: 0.5;
+}
+.password {
+  font-family: "Orbitron", sans-serif;
+  border: 1px solid cyan;
+  padding: 10px;
+  width: 200px;
+  opacity: 0.5;
+}
+
+.google-btn {
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(225deg, #aebfc6, #cfe3eb);
+  box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
+  border-radius: 10px;
+  border: 0px solid black;
+  width: 100px;
+  height: 60px;
+  overflow: hidden;
+  &:hover {
+    box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
+    background: linear-gradient(225deg, #193e4e, #108fc2);
+  }
+}
+
+.custm-btn {
+  font-family: "Orbitron", sans-serif;
+}
