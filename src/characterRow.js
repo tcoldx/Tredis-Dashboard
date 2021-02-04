@@ -24,19 +24,26 @@ const Games = ({ gameArray, setTheGames }) => {
         setLoading(false);
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [setTheGames]);
+
   if (!loading) {
     return (
       <div className="Card-contain">
         {gameArray.map((game, i) => {
           if (i < 3) {
             return <GameCard key={game.id} {...game} />;
+          } else {
+            return <div></div>;
           }
         })}
       </div>
     );
   } else {
-    return <p>Loading Games...</p>;
+    return (
+      <div>
+        <p>Loading Games...</p>
+      </div>
+    );
   }
 };
 
