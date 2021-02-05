@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+
 import "./stealth.styles.scss";
 import GameCard from "../../Games";
 
@@ -16,4 +16,4 @@ const mapStateToProps = (state) => ({
   gamesAr: state.games,
 });
 
-export default withRouter(connect(mapStateToProps)(Stealth));
+export default connect(mapStateToProps)(Stealth);

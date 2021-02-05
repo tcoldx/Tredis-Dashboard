@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Switch, Route } from "react-router-dom";
+import { HashRouter as Switch, Route } from "react-router-dom";
 
 import Dashboard from "../../Pages/Dashboard/dashboard.component";
 import Stealth from "../../Pages/Stealth/stealth.component";

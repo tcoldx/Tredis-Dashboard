@@ -33,7 +33,7 @@ const Games = ({ gameArray, setTheGames }) => {
           if (i < 3) {
             return <GameCard key={game.id} {...game} />;
           } else {
-            return <div></div>;
+            return null;
           }
         })}
       </div>
