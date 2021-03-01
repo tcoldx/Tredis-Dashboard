@@ -5,7 +5,7 @@
   width: 200px;
   height: 150vh;
   align-items: flex-start;
-  position: relative;
+  position: absolute;
 
   .sidebar-item {
     display: flex;
@@ -23,6 +23,9 @@
       width: 200px;
     }
   }
+  .inner-text {
+    font-family: "Ruslan Display", cursive;
+  }
   .icon-re {
     position: relative;
     left: 40px;
@@ -35,8 +38,8 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    left: 40px;
-    top: 50px;
+    left: 50px;
+    top: 30px;
   }
   .pl1 {
     position: relative;
@@ -51,15 +54,17 @@
     border-radius: 10px;
     border: 0px solid black;
     width: 100px;
+    text-decoration: none;
   }
   .custom-button:hover {
     background: linear-gradient(225deg, #145d7c, #0fa4df);
   }
   .inner-text-log {
-    font-family: "Big Shoulders Stencil Text", cursive;
+    font-family: "Ruslan Display", cursive;
     color: black;
     position: relative;
-    left: 32px;
+    left: 20px;
+    top: 2px;
     text-decoration: none;
   }
 

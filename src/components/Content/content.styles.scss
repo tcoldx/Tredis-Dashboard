@@ -1,13 +1,12 @@
 .content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-   grid-column-gap: 25px;
-  
-  }
-  
-  .content-item {
-    background-color: red;
-    border-radius: 4px;
-    padding: 12px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  height: 100vh;
+}
 
+.content-item {
+  background-color: red;
+  border-radius: 4px;
+  padding: 12px;
+}

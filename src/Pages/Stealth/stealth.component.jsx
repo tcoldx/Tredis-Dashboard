@@ -6,14 +6,14 @@ import GameCard from "../../Games";
 
 const Stealth = ({ gamesAr }) => (
   <div className="stealth-content">
-    {gamesAr.games.map((game) => {
+    {gamesAr.map((game) => {
       return <GameCard key={game.id} {...game} />;
     })}
   </div>
 );
 
 const mapStateToProps = (state) => ({
-  gamesAr: state.games,
+  gamesAr: state.games.games,
 });
 
 export default connect(mapStateToProps)(Stealth);

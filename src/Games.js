@@ -38,13 +38,14 @@ const GameCard = (props) => {
             src={props.background_image}
             alt="sss"
           />
+        </div>
+
+        <div className="name-game">
           <MdStar
             className="custm-btn"
             onClick={() => addFavoriteToStore(Game)}
           />
         </div>
-
-        <div className="name-game"></div>
       </div>
     </div>
   );

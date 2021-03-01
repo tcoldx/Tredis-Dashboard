@@ -27,8 +27,8 @@ const SideBar = ({ currentUser }) => {
       </Link>
       <div className="login">
         <img className="profile-log" src={espi} alt="ret" />
-        <span className="pl1">Evil Nuka</span>
-        <span className="pl1">evilnuka@woa.com</span>
+        <span className="pl1">Tredis Ingram</span>
+        <span className="pl1">t.tredis@gmail.com</span>
         {currentUser ? (
           <div className="custom-button" onClick={() => auth.signOut()}>
             Sign Out

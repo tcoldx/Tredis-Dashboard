@@ -1,61 +1,54 @@
 .action-content {
+  position: relative;
   display: grid;
- grid-template-columns: repeat(3, 1fr);
- grid-column-gap: 25px;
- grid-auto-rows: 300px;
- padding: 20px;
+  left: 13%;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-auto-rows: 300px;
 
   .content-item {
-     display: flex;
-     flex-direction: row;
-     gap: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     margin: 15px;
     border-radius: 50px;
     border-radius: 70px;
     background: #ffffff;
-    box-shadow: inset 14px 14px 28px #cccccc, 
-                inset -14px -14px 28px #ffffff;
+    box-shadow: inset 14px 14px 28px #cccccc, inset -14px -14px 28px #ffffff;
     height: 200px;
     width: 350px;
   }
 
-    .logo-circ {
-      border-radius: 111px;
-      background: #ffffff;
-      box-shadow: inset 5px 5px 10px #cccccc, 
-          inset -5px -5px 10px #ffffff;
-           height: 100px;
-           width: 100px;
+  .logo-circ {
+    border-radius: 111px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 10px #cccccc, inset -5px -5px 10px #ffffff;
+    height: 100px;
+    width: 100px;
+  }
 
-           
-    }
-           
-    .circ-bottom {
-      width: 200px;
-      height: 50px;
-    }
+  .circ-bottom {
+    width: 200px;
+    height: 50px;
+  }
 
+  .logo-inner {
+    position: relative;
+    top: 30px;
+    left: 29px;
+  }
 
-    .logo-inner {
-      position: relative;
-      top: 30px;
-      left: 29px;
-    }
+  .cont-item-4 {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 10px 10px 27px #cfcfcf, -10px -10px 27px #ffffff;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 100%;
+    height: 68vh;
+  }
 
-    .cont-item-4 {
-      border-radius: 30px;
-      background: linear-gradient(145deg, #ffffff, #e6e6e6);
-      box-shadow:  10px 10px 27px #cfcfcf, 
-           -10px -10px 27px #ffffff;
-     grid-column-start: 1;
-     grid-column-end: 5;
-     width: 100%;
-     height: 68vh;
-    }
-
-    .circ-bottom {
-        position: relative;
-        left: 20px;
-    }
-
+  .circ-bottom {
+    position: relative;
+    left: 20px;
+  }
 }

@@ -3,11 +3,11 @@
 .signin-container {
   font-family: "Orbitron", sans-serif;
   position: relative;
-  width: 100vw;
   height: 100vh;
   height: 100vh;
   overflow: hidden;
-
+  position: absolute;
+  left: 20px;
   align-items: center;
 }
 

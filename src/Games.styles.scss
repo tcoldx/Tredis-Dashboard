@@ -1,76 +1,77 @@
 .games-content {
-        display: grid;
-       grid-template-columns: 2fr 1fr;
-       grid-column-gap: 5px;
-       padding: 25px;
-    
-     .games-card {
-       display: flex;
-       flex-direction: row;
-   margin: 15px;
-   border-radius: 10px;
-   background: #ffffff;
-   box-shadow: inset 14px 14px 28px #cccccc, 
-               inset -14px -14px 28px #ffffff;
-   height: 200px;
-   width: 350px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 5px;
+  padding: 25px;
 
-.sr {
-  border-radius: 100%;
-  position: relative;
-  left: 20px;
-  top: 40px;
-}
-.game-icon {
-              position: relative;
-              left: 20px;
-              top: 20px;
-            }
+  .games-card {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: inset 14px 14px 28px #cccccc, inset -14px -14px 28px #ffffff;
+    height: 200px;
+    width: 350px;
 
- }
-.img-inner{
-  border-radius: 70px;
-}
-.game-info {
-  color: black;
-  font-family: 'Big Shoulders Stencil Text', cursive;
-}
-
+    .sr {
+      border-radius: 100%;
+      position: relative;
+      left: 20px;
+      top: 40px;
+    }
+    .game-icon {
+      position: relative;
+      left: 20px;
+      top: 20px;
+    }
+  }
+  .img-inner {
+    border-radius: 70px;
+  }
+  .game-info {
+    color: black;
+    font-family: "Big Shoulders Stencil Text", cursive;
+  }
 }
 .span-inf {
-    position: relative;
-    top: 180px;
-    left: 150px;
-    color: white;
-  }
+  position: relative;
+  top: 180px;
+  left: 150px;
+  color: white;
+}
 
-  .card-prime {
-    width: 300px;
-    height: 100px;
-  }
+.card-prime {
+  width: 300px;
+  height: 100px;
+}
 
-  .card-prime-container {
-    position: relative;
-    top: 750px;
-    right: 785px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 325px 320px 320px 100px;
-    grid-template-rows: 100px;
-  }
+.card-prime-container {
+  position: relative;
+  top: 750px;
+  right: 785px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 325px 320px 320px 100px;
+  grid-template-rows: 100px;
+}
 
-  .custm-btn {
-    background: linear-gradient(225deg, #aebfc6, #cfe3eb);
-    box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
-    border-radius: 10px;
-    border: 0px solid black;
-    width: 80px;
-    height: 20px;
+.custm-btn {
+  background: linear-gradient(225deg, #aebfc6, #cfe3eb);
+  box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
+  border-radius: 10px;
+  border: 0px solid black;
+  width: 80px;
+  height: 20px;
+}
 
-    
-  }
+.name-game {
+  position: relative;
+  right: 99%;
+  top: 86%;
+}
 
-  .custm-btn:hover {
-    box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
-    background: linear-gradient(225deg, #193e4e, #108fc2);
-  }
+.custm-btn:hover {
+  box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
+  background: linear-gradient(225deg, #193e4e, #108fc2);
+}
