@@ -3,12 +3,14 @@
   grid-template-columns: 2fr 1fr;
   grid-column-gap: 5px;
   padding: 25px;
-
+  .aaa-aaa {
+    border-radius: 20px;
+  }
   .games-card {
     display: flex;
     flex-direction: row;
     margin: 15px;
-    border-radius: 10px;
+    border-radius: 20px;
     background: #ffffff;
     box-shadow: inset 14px 14px 28px #cccccc, inset -14px -14px 28px #ffffff;
     height: 200px;
@@ -74,4 +76,11 @@
 .custm-btn:hover {
   box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
   background: linear-gradient(225deg, #193e4e, #108fc2);
+}
+
+.container-info {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  background-color: bisque;
 }

@@ -6,12 +6,24 @@ import { AddFav } from "./redux/favcart/fav.actions";
 import { connect } from "react-redux";
 
 const GameCard = (props) => {
-  const { id, name, background_image, setFavs, favoritos } = props;
+  const {
+    id,
+    name,
+    background_image,
+    setFavs,
+    favoritos,
+    clip,
+    released,
+    ratings_count,
+  } = props;
 
   const Game = {
     id,
     name,
     background_image,
+    clip,
+    released,
+    ratings_count,
   };
 
   const addFavoriteToStore = (game) => {
@@ -31,18 +43,19 @@ const GameCard = (props) => {
   return (
     <div className="games-content">
       <div className="games-card">
-        <div className="aaa-aaa">
-          <img
-            width="350px"
-            height="200px"
-            src={props.background_image}
-            alt="sss"
-          />
-        </div>
-
-        <div className="name-game">
+        <img
+          className="aaa-aaa"
+          width="350px"
+          height="200px"
+          src={props.background_image}
+          alt="sss"
+        />
+        <div className="game-card-info">
+          <h2>{Game.name}</h2>
+          <div className="test-some">Rating: {Game.ratings_count}</div>
+          <div className="test-some">Release: {Game.released}</div>
           <MdStar
-            className="custm-btn"
+            className="custm-btn-fav"
             onClick={() => addFavoriteToStore(Game)}
           />
         </div>

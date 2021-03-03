@@ -17,9 +17,14 @@
 }
 .aaa-aaa {
   display: flex;
-
+  border-radius: 13px;
   height: 200px;
   width: 350px;
+}
+.aaa-aaa:hover {
+  transform: scale(1.03);
+  transition: 0.4s;
+  opacity: 0.9;
 }
 .sliderc {
   display: flex;

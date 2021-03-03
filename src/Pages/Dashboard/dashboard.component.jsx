@@ -40,7 +40,7 @@ const Dashboard = (props) => {
       <div className="nedd">
         <Games />
       </div>
-      <div className="games-card card-4">
+      <div className="games-card-4">
         <div className="inner-graph">
           <span className="bodark">Favorited Games</span>
         </div>

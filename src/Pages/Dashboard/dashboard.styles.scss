@@ -8,6 +8,7 @@
   grid-template-columns: 400px 400px 300px;
   grid-gap: 20px;
 }
+
 .slideshow {
   position: absolute;
   height: 34vh;
@@ -24,6 +25,39 @@
   transition: 0.2s;
   opacity: 0.9;
 }
+.game-card-info {
+  position: absolute;
+  height: 110px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: linear-gradient(225deg, #aebfc6, #cfe3eb);
+  box-shadow: inset 14px 14px 28px #b0c1c8, inset -14px -14px 28px #acacac;
+  width: 350px;
+  top: 160px;
+  color: white;
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.test-some {
+  border-bottom: 1px black solid;
+  border-left-width: 200px;
+  opacity: 0.9;
+  padding: 20px 3px;
+}
+
+.game-card-info:hover {
+  position: absolute;
+  height: 300px;
+  z-index: 40;
+}
+
+.game-card-info h2 {
+  font-family: "Ruslan Display", cursive;
+}
+
 .nedd {
   visibility: hidden;
 }
@@ -43,18 +77,6 @@
   top: 35%;
 }
 
-.aaa-aaa {
-  border-radius: 12px;
-  cursor: pointer;
-  transition: 0.5s;
-
-  &.aaa-aaa:hover {
-    transform: scale(1.03);
-    transition: 0.2s;
-    opacity: 0.9;
-  }
-}
-
 .games-card {
   position: relative;
   border-radius: 8px;
@@ -62,26 +84,47 @@
   box-shadow: inset 14px 14px 28px #b0c1c8, inset -14px -14px 28px #acacac;
   height: 200px;
   width: 350px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.games-card-4 {
+  position: absolute;
+  top: 300px;
+  left: 20px;
+  width: 80vw;
+  height: 50vh;
+  padding: 16px;
+  overflow-x: hidden;
+  background: linear-gradient(225deg, #aebfc6, #cfe3eb);
+  box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
+}
+.games-card:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+  opacity: 0.9;
+}
 
-  &.card-4 {
-    position: absolute;
-    top: 300px;
-    left: 20px;
-    width: 80vw;
-    height: 50vh;
-    padding: 16px;
-    background: linear-gradient(225deg, #aebfc6, #cfe3eb);
-    box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
-  }
+.custm-btn-fav {
+  background: linear-gradient(225deg, #aebfc6, #cfe3eb);
+  box-shadow: -3px 3px 6px #b0c1c8, 3px -3px 6px #d2e7f0;
+  cursor: pointer;
+}
+
+.custm-btn-fav:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+  opacity: 0.9;
+  background: linear-gradient(225deg, #48626e, #cfe3eb);
+  border-radius: 10px;
 }
 
 .inner-card {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding: 40px;
-  overflow: hidden;
+  display: grid;
+  padding-left: 50px;
+  padding-top: 30px;
+  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-rows: 250px 250px 250px 250px;
 }
 
 .inner-graph {
@@ -132,14 +175,10 @@
 
 .fav-cards {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 10px;
+
   border-radius: 10px;
   cursor: pointer;
-}
-.fav-cards:hover {
-  transform: scale(1.03);
-  transition: 0.2s;
-  opacity: 0.8;
 }
 
 .card-prime {
@@ -177,12 +216,14 @@
 
 .remove-button-contain {
   position: relative;
-  right: 22px;
-  top: 1px;
+  right: 106px;
+  top: 5px;
   float: right;
   z-index: 20;
 }
-
+.remove-button {
+  opacity: 0.4;
+}
 .remove-button:hover {
   transform: scale(1.03);
   transition: 0.2s;

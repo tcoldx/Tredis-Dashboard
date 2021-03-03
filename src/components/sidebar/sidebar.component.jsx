@@ -11,7 +11,7 @@ const SideBar = ({ currentUser }) => {
   return (
     <div className="sidebar">
       <Link to="/" className="sidebar-item">
-        <div className="inner-text">Dashboard</div>
+        <span className="inner-text">Dashboard</span>
       </Link>
       <Link to="/stealth" className="sidebar-item">
         <div className="inner-text">Stealth</div>

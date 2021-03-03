@@ -27,16 +27,12 @@ const ImageSlider = ({ images }) => {
           onClick={slideLeft}
         />
 
-        <div className="games-card">
-          <img className="aaa-aaa" src={images[index + 3]} alt={images} />
-        </div>
+        <img className="aaa-aaa" src={images[index + 3]} alt={images} />
 
-        <div className="games-card">
-          <img className="aaa-aaa" src={images[index + 1]} alt={images} />
-        </div>
-        <div className="games-card">
-          <img className="aaa-aaa" src={images[index + 6]} alt={images} />
-        </div>
+        <img className="aaa-aaa" src={images[index + 1]} alt={images} />
+
+        <img className="aaa-aaa" src={images[index + 6]} alt={images} />
+
         <MdNavigateNext
           className="next-button"
           size="30px"
